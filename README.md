@@ -98,7 +98,7 @@ Install all with: pip install pandas numpy matplotlib seaborn scikit-learn xgboo
 
 ### Data
 
-* Dataset: [Washington State Real Estate — Kaggle](https://www.kaggle.com](https://www.kaggle.com/datasets/kanchana1990/washington-real-estate-sold-properties-data-2026))
+* Dataset: [Washington State Real Estate — Kaggle](https://www.kaggle.com/datasets/kanchana1990/washington-real-estate-sold-properties-data-2026))
 * No additional preprocessing steps needed beyond running the notebook
 
 ### Training
