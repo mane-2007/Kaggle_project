@@ -88,3 +88,32 @@ XGBoost outperformed Ridge on both metrics. The consistency between validation a
 ### Software Setup
 
 Required packages:
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+xgboost
+Install all with: pip install pandas numpy matplotlib seaborn scikit-learn xgboost
+
+### Data
+
+* Dataset: [Washington State Real Estate — Kaggle](https://www.kaggle.com) ← replace with your actual Kaggle link
+* No additional preprocessing steps needed beyond running the notebook
+
+### Training
+
+* Open `real_estate.ipynb` in Jupyter Notebook or JupyterLab
+* Run all cells in order
+* XGBoost training cell will print progress every 50 trees and stop automatically via early stopping
+
+#### Performance Evaluation
+
+* Validation and test metrics (R² and MAE) are printed at the end of the notebook
+* To evaluate on new data, apply the trained `model` object and `scaler` to your feature matrix following the same column structure
+
+## Citations
+
+* Washington State Real Estate dataset — Kaggle (insert your link)
+* XGBoost documentation: https://xgboost.readthedocs.io
+* Scikit-learn documentation: https://scikit-learn.org
