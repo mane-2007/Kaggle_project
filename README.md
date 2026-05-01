@@ -6,7 +6,11 @@ This repository holds an attempt to apply XGBoost regression to predict house sa
 
 ## Overview
 
-The task is to predict the final sale price (`lastSoldPrice`) of residential properties in Washington State given features such as square footage, number of bedrooms/bathrooms, year built, property type, and ZIP code. The approach formulates this as a regression problem, using XGBoost as the primary model after establishing a Ridge Regression baseline. The target variable was log-transformed to handle price skewness before training. The best model achieved an R² of 0.66 and a Mean Absolute Error of ~$105,000 on the held-out test set.
+The task is to predict the final sale price (`lastSoldPrice`) of residential properties in Washington State given features such as square footage, number of bedrooms/bathrooms, year built, property type, and ZIP code. The central insight of this project is that **location — encoded via ZIP code — is the dominant predictor of house prices**, outweighing physical features like square footage or number of bedrooms alone. ZIP codes were encoded at two geographic levels: the full ZIP code to capture neighborhood-level pricing, and the first 3 digits of the ZIP to capture broader regional market trends. This two-level geographic encoding was the most important feature group in the final model.
+
+The approach formulates this as a regression problem, using XGBoost as the primary model after establishing a Ridge Regression baseline. The target variable was log-transformed to handle price skewness before training, compressing the wide price range ($1k–$15.7M) so the model could learn from typical homes without being pulled toward rare luxury outliers. Predictions were converted back to dollars using the inverse transformation.
+
+Our best model achieved an R² of 0.66 and a Mean Absolute Error of ~$105,000 on the held-out test set, improving over the Ridge Regression baseline (R² of 0.63, MAE ~$112,000). The performance gap between the two models confirms that house price relationships are non-linear and benefit from a tree-based approach.
 
 ## Summary of Workdone
 
