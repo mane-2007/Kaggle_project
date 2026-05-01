@@ -6,7 +6,7 @@ This repository holds an attempt to apply XGBoost regression to predict house sa
 
 ## Overview
 
-The task is to predict the final sale price (`lastSoldPrice`) of residential properties in Washington State given features such as square footage, number of bedrooms/bathrooms, year built, property type, and ZIP code. The approach formulates this as a regression problem, using XGBoost as the primary model after establishing a Ridge Regression baseline. The target variable was log-transformed to handle price skewness before training. Our best model achieved an R² of 0.66 and a Mean Absolute Error of ~$105,000 on the held-out test set.
+The task is to predict the final sale price (`lastSoldPrice`) of residential properties in Washington State given features such as square footage, number of bedrooms/bathrooms, year built, property type, and ZIP code. The approach formulates this as a regression problem, using XGBoost as the primary model after establishing a Ridge Regression baseline. The target variable was log-transformed to handle price skewness before training. The best model achieved an R² of 0.66 and a Mean Absolute Error of ~$105,000 on the held-out test set.
 
 ## Summary of Workdone
 
