@@ -31,6 +31,8 @@ The task is to predict the final sale price (`lastSoldPrice`) of residential pro
 Feature distributions were compared before and after cleaning to confirm outlier removal and imputation worked as expected. After cleaning, histograms were compared across three price tiers (Low / Mid / High) to identify which features carried the most signal. Square footage showed the clearest separation between tiers, followed by year built and number of bathrooms. A correlation heatmap on the raw data confirmed which features were leaking information about the target.
 
 <img width="611" height="338" alt="Screenshot 2026-05-01 112234" src="https://github.com/user-attachments/assets/6ecf80ca-b688-4643-9380-7efb1a6fe291" />
+<img width="549" height="307" alt="Screenshot 2026-05-01 113605" src="https://github.com/user-attachments/assets/e71a97a2-eb6a-42b9-a2db-b33ecea65072" />
+
 
 
 ### Problem Formulation
