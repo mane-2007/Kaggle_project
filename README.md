@@ -32,6 +32,8 @@ Feature distributions were compared before and after cleaning to confirm outlier
 
 <img width="611" height="338" alt="Screenshot 2026-05-01 112234" src="https://github.com/user-attachments/assets/6ecf80ca-b688-4643-9380-7efb1a6fe291" />
 <img width="549" height="307" alt="Screenshot 2026-05-01 113605" src="https://github.com/user-attachments/assets/e71a97a2-eb6a-42b9-a2db-b33ecea65072" />
+<img width="878" height="784" alt="image" src="https://github.com/user-attachments/assets/59a76715-1c49-47ad-a467-e962772feec7" />
+
 
 
 
