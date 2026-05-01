@@ -35,7 +35,7 @@ Feature distributions were compared before and after cleaning to confirm outlier
 * **Input:** Numerical and categorical features describing a residential property (sqft, beds, baths, year built, stories, garage, ZIP code, property type)
 * **Output:** Predicted sale price in dollars
 * **Models:**
-  * *Ridge Regression* — used as a baseline linear model. Achieved R² of 0.68 and MAE of ~$113,000. Limited by its assumption of linear relationships between features and price.
+  * *Ridge Regression* — used as a baseline linear model. Achieved R² of 0.62 and MAE of ~$113,000. Limited by its assumption of linear relationships between features and price.
   * *XGBoost Regressor* — selected as the primary model because house prices have non-linear relationships with features (e.g. price doesn't scale linearly with sqft). XGBoost captures these patterns through ensembled decision trees and handles the mix of sparse one-hot encoded columns and dense numerical features well.
 * **Target transformation:** `np.log1p` applied to sale price before training to reduce skewness; predictions converted back with `np.expm1`
 * **Hyperparameters:** `n_estimators=500`, `learning_rate=0.05`, `max_depth=6`, `subsample=0.8`, `colsample_bytree=0.8`, `early_stopping_rounds=20`
